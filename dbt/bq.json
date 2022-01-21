@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "pure-oxygen-337114",
+  "private_key_id": "39230aa2652d438c378f8a0d9aea0d8f669bbe32",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQC4xjkFqIyin2/f\nq2AJqC2q5rdaiwVgKNv+UDELzZYkNumAn6jHicFeDr09JcoHkqBRdGKA45r/th+B\nXqclkpBXpt5FJ7aaonxK8CDOHZfTgwppQHA/kJY6KNA+23eebL9lTEL+3PobN2g+\nBP34uQrVQoDgJN89OsmzqRQs4SdBBlkxyHBw6ugzF4OIwZMlZvDDbiUDqXOwQ0gp\naKCsBLN515BGZA4t8ht/wsV6ZbcnV0tSogd5FJ66yVT/tBIBnar8q2bTz3WzwViG\nR3wky1OE45/WYRBFgTCQp8SlkgLbaxrXVUp97f2lagR7+3T7ICH74cnGN4Rlb9bi\ncA1zuN4VAgMBAAECggEAIYVom+Ovm+Mj5yaOlkHqAwq3Mdhtwbu36YO/2h3SgsBp\njTmp44VUzM0MvNapt8T8i7p7Eln4aTKvtYcn+LOFtzkhMteZE6WtueSldu88d5Va\n4qxbkNSYxHVaDkU/hsDA2k5DCzyorR5YrYO3VZOwaO8XNVLLIy8Sn6Lpc5jnR67h\nsnmaHF8XSae8OW+7lnK2BapGOU5ePdDk6W/i42R4CacvnDWjwr+Am7E23o5X5Yh4\niinr0DzCpIZJmniyjhzruaKa0Bn4fUZds8cyfx+7hiXCuVo7pC7iSm1d8x65QhdF\nH9kD87aFkgC0YkzCUG52Q088N72dSlrHtrvxYRJvwwKBgQDhKP4W0G0bRqB06i/6\nMFvnGDbRcVHZSQtUD2gY8XN/4BiBZ0eT7Pvf9a871D/mPB4mQmFnyd5gRk/2+o+2\nE5IkwbOwrH3w+d9oqonm+GPOptoDNZBMoDuZ1X37A3mu3eDyMWRfMEpVDZzY9o50\nItFVlEblF+re5fzKf/4QG6bsiwKBgQDSFSSkGvV1fUO9NyoE6asB6MpFcferBYmb\ncuZO9ykC+sYPmxkpjkPxd2mImVIxmTDPe7TtXfX2xSeOIHsONzL8B05jXDGmVOcH\nmAacq5juTKZoYRq5teeKEFa/joIgUYtsrL34C4mvc0RklzJyFhj53ONCqrUNc/46\nKRIpKReT3wKBgF/IF2bPHUrYHZP+t5AfmEjTdSZdpWrgdtA4iZjqxa5lPyd1Lu7P\nhko8cmHqJZCkjFLMNDF5n36nCodPCWl0I9w9Blqm1iB3u0EEIwu9KIAVXHK3C359\nPz1uo1vvm4j23CVLO55+pXBPDSUCpZDj6tcT76CvLvvJLGNcVVC24qiHAoGAED+8\nZskDBURcEe2LXXfpVyt3QanP+zVhcFmRwLfTPzzARwK7DoDHdozC5+Lb/aQYp2Ot\nGdLzrFORfKe8fNv+IIo8IOlHmdLlT6wNjt6i5IOfN2GTXJvaPc6HtydBn1hPTWeL\nBf12d9CVkKY1K6fT5LeWCFkFyfWXy03T7sUT4scCgYBnNgsPxQz2w390K95OjT3N\nMi2tz8Oi++xPGgEJqaGfioI1bX8IbSKNY2ED/sFOjq01CZvP47/xNs6qKsTeoiCo\n7rv0K4Qd1kEF5k+swyshkbNVTC5ryQy3HEiWYP4If9N60Uscwxdw0sxCmBJHNz+p\n2juT6+/0lCSngKkTv1/Nkg==\n-----END PRIVATE KEY-----\n",
+  "client_email": "dbt-leo@pure-oxygen-337114.iam.gserviceaccount.com",
+  "client_id": "108548958098110016564",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/dbt-leo%40pure-oxygen-337114.iam.gserviceaccount.com"
+}
+

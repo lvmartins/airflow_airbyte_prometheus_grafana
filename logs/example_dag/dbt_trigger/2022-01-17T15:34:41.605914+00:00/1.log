@@ -1,0 +1,46 @@
+[2022-01-17 15:35:15,245] {taskinstance.py:903} INFO - Dependencies all met for <TaskInstance: example_dag.dbt_trigger 2022-01-17T15:34:41.605914+00:00 [queued]>
+[2022-01-17 15:35:15,251] {taskinstance.py:903} INFO - Dependencies all met for <TaskInstance: example_dag.dbt_trigger 2022-01-17T15:34:41.605914+00:00 [queued]>
+[2022-01-17 15:35:15,251] {taskinstance.py:1094} INFO - 
+--------------------------------------------------------------------------------
+[2022-01-17 15:35:15,251] {taskinstance.py:1095} INFO - Starting attempt 1 of 1
+[2022-01-17 15:35:15,251] {taskinstance.py:1096} INFO - 
+--------------------------------------------------------------------------------
+[2022-01-17 15:35:15,263] {taskinstance.py:1114} INFO - Executing <Task(BashOperator): dbt_trigger> on 2022-01-17T15:34:41.605914+00:00
+[2022-01-17 15:35:15,266] {standard_task_runner.py:52} INFO - Started process 195 to run task
+[2022-01-17 15:35:15,270] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'example_dag', 'dbt_trigger', '2022-01-17T15:34:41.605914+00:00', '--job-id', '43', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/example_dag.py', '--cfg-path', '/tmp/tmpsac1x7bg', '--error-file', '/tmp/tmpt4lm83bg']
+[2022-01-17 15:35:15,271] {standard_task_runner.py:77} INFO - Job 43: Subtask dbt_trigger
+[2022-01-17 15:35:15,312] {logging_mixin.py:109} INFO - Running <TaskInstance: example_dag.dbt_trigger 2022-01-17T15:34:41.605914+00:00 [running]> on host efd93b66773e
+[2022-01-17 15:35:15,388] {taskinstance.py:1251} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=example_dag
+AIRFLOW_CTX_TASK_ID=dbt_trigger
+AIRFLOW_CTX_EXECUTION_DATE=2022-01-17T15:34:41.605914+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-01-17T15:34:41.605914+00:00
+[2022-01-17 15:35:15,389] {subprocess.py:52} INFO - Tmp dir root location: 
+ /tmp
+[2022-01-17 15:35:15,389] {subprocess.py:63} INFO - Running command: ['bash', '-c', 'sudo cd / && sudo cd home/dev/dbt && sudo dbt run']
+[2022-01-17 15:35:15,396] {subprocess.py:74} INFO - Output:
+[2022-01-17 15:35:15,401] {subprocess.py:78} INFO - 
+[2022-01-17 15:35:15,401] {subprocess.py:78} INFO - We trust you have received the usual lecture from the local System
+[2022-01-17 15:35:15,401] {subprocess.py:78} INFO - Administrator. It usually boils down to these three things:
+[2022-01-17 15:35:15,401] {subprocess.py:78} INFO - 
+[2022-01-17 15:35:15,401] {subprocess.py:78} INFO -     #1) Respect the privacy of others.
+[2022-01-17 15:35:15,401] {subprocess.py:78} INFO -     #2) Think before you type.
+[2022-01-17 15:35:15,401] {subprocess.py:78} INFO -     #3) With great power comes great responsibility.
+[2022-01-17 15:35:15,402] {subprocess.py:78} INFO - 
+[2022-01-17 15:35:15,402] {subprocess.py:78} INFO - sudo: no tty present and no askpass program specified
+[2022-01-17 15:35:15,402] {subprocess.py:82} INFO - Command exited with return code 1
+[2022-01-17 15:35:15,412] {taskinstance.py:1462} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 1164, in _run_raw_task
+    self._prepare_and_execute_task_with_callbacks(context, task)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 1282, in _prepare_and_execute_task_with_callbacks
+    result = self._execute_task(context, task_copy)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 1312, in _execute_task
+    result = task_copy.execute(context=context)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/bash.py", line 176, in execute
+    raise AirflowException('Bash command failed. The command returned a non-zero exit code.')
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code.
+[2022-01-17 15:35:15,413] {taskinstance.py:1505} INFO - Marking task as FAILED. dag_id=example_dag, task_id=dbt_trigger, execution_date=20220117T153441, start_date=20220117T153515, end_date=20220117T153515
+[2022-01-17 15:35:15,440] {local_task_job.py:151} INFO - Task exited with return code 1
+[2022-01-17 15:35:15,460] {local_task_job.py:261} INFO - 0 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,27 @@
+[2022-01-18 12:07:17,077] {taskinstance.py:903} INFO - Dependencies all met for <TaskInstance: example_dag_2.dbt_run 2021-03-24T00:00:00+00:00 [queued]>
+[2022-01-18 12:07:17,087] {taskinstance.py:903} INFO - Dependencies all met for <TaskInstance: example_dag_2.dbt_run 2021-03-24T00:00:00+00:00 [queued]>
+[2022-01-18 12:07:17,087] {taskinstance.py:1094} INFO - 
+--------------------------------------------------------------------------------
+[2022-01-18 12:07:17,087] {taskinstance.py:1095} INFO - Starting attempt 1 of 1
+[2022-01-18 12:07:17,087] {taskinstance.py:1096} INFO - 
+--------------------------------------------------------------------------------
+[2022-01-18 12:07:17,109] {taskinstance.py:1114} INFO - Executing <Task(BashOperator): dbt_run> on 2021-03-24T00:00:00+00:00
+[2022-01-18 12:07:17,114] {standard_task_runner.py:52} INFO - Started process 1068 to run task
+[2022-01-18 12:07:17,123] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'example_dag_2', 'dbt_run', '2021-03-24T00:00:00+00:00', '--job-id', '951', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/dbt_example.py', '--cfg-path', '/tmp/tmpkbkyfc42', '--error-file', '/tmp/tmpyz8t6_lg']
+[2022-01-18 12:07:17,125] {standard_task_runner.py:77} INFO - Job 951: Subtask dbt_run
+[2022-01-18 12:07:17,213] {logging_mixin.py:109} INFO - Running <TaskInstance: example_dag_2.dbt_run 2021-03-24T00:00:00+00:00 [running]> on host c7f08ec3c7e5
+[2022-01-18 12:07:17,298] {taskinstance.py:1251} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=example_dag_2
+AIRFLOW_CTX_TASK_ID=dbt_run
+AIRFLOW_CTX_EXECUTION_DATE=2021-03-24T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2021-03-24T00:00:00+00:00
+[2022-01-18 12:07:17,299] {subprocess.py:52} INFO - Tmp dir root location: 
+ /tmp
+[2022-01-18 12:07:17,299] {subprocess.py:63} INFO - Running command: ['bash', '-c', 'pwd']
+[2022-01-18 12:07:17,312] {subprocess.py:74} INFO - Output:
+[2022-01-18 12:07:17,313] {subprocess.py:78} INFO - /tmp/***tmp6o9vfbe9
+[2022-01-18 12:07:17,313] {subprocess.py:82} INFO - Command exited with return code 0
+[2022-01-18 12:07:17,381] {taskinstance.py:1211} INFO - Marking task as SUCCESS. dag_id=example_dag_2, task_id=dbt_run, execution_date=20210324T000000, start_date=20220118T120717, end_date=20220118T120717
+[2022-01-18 12:07:17,415] {local_task_job.py:151} INFO - Task exited with return code 0
+[2022-01-18 12:07:17,458] {local_task_job.py:261} INFO - 0 downstream tasks scheduled from follow-on schedule check
